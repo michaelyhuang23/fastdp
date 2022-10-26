@@ -1,0 +1,64 @@
+Fast Density Peaks clustering with kNN graph
+infn:../ParCluster/dataset/varden/1000000.txt neighbors:10 clusters:2 data type:vec
+clusters=2 knng_algo=0 knng_endc:0.010000 start_nndes:0.100000 data_type=1
+time[start]=0.000000s
+Reading ascii dataset file ../ParCluster/dataset/varden/1000000.txt
+lines=1000000
+ 52713.269531 58560.769531
+num_vectors=1000000 D=2
+Fast random pair divisive (RP-Div) construction of kNN graph v. 0.1
+K=10 W=25 delta=0.010000 maxIterations=100 nndes_start=0.100000 data type 1, distance type:0
+iter=0 time: time=1.156705s
+RP-div update_count=13957052 changes=139.570526%
+iter=1 time: time=1.775320s
+RP-div update_count=3998764 changes=39.987640%
+iter=2 time: time=2.296575s
+RP-div update_count=1359553 changes=13.595531%
+iter=3 time: time=2.769276s
+RP-div update_count=561561 changes=5.615610%
+start nndes: time=3.222760s
+  Build old_knn, new_knn : time=3.250875s
+  START Local join: time=3.615172s
+  END Local join: time=6.705127s
+NNDES k=10 update_count_nndes=500996 changes=5.009960%
+iter=4 time: time=6.803258s
+RP-div update_count=14359 changes=0.143590%
+start nndes: time=7.240360s
+  Build old_knn, new_knn : time=7.253625s
+  START Local join: time=7.682337s
+  END Local join: time=8.360111s
+NNDES k=10 update_count_nndes=14730 changes=0.147300%
+Reached end condition: changes=0.290890% < 1.000000%, time=8.501197s
+time=8.501199s
+time[graph]=8.501200s
+i:0 density:16.904591
+i:1 density:17.291566
+i:2 density:19.293899
+i:3 density:16.680986
+i:4 density:11.890316
+i:5 density:6.621089
+i:6 density:44.516830
+i:7 density:39.846332
+i:8 density:11.889885
+i:9 density:6.275417
+i:0 density:0.059156
+i:1 density:0.057832
+i:2 density:0.051830
+i:3 density:0.059948
+i:4 density:0.084102
+i:5 density:0.151033
+i:6 density:0.022463
+i:7 density:0.025096
+i:8 density:0.084105
+i:9 density:0.159352
+time[density]=9.151866s
+Found deltas for 950918/1000000 points among 10 neighbors
+delta_in_knn=950918 delta_in_rev_knn=0 found_delta_total=950918 delta_not_found=49082
+time[delta_knn]=9.175753s
+time[delta_bf]=344.326660s
+time[deltadens]=344.326691s
+time=344.327454s
+First 2 peaks:6088 684204 
+time[total]=344.560364s
+total_time=344.560364s neighborhood_peaks=49082 num_iter=100
+END

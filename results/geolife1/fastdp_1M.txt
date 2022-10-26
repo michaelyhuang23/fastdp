@@ -1,0 +1,40 @@
+Fast Density Peaks clustering with kNN graph
+infn:../ParCluster/dataset/reallife/3D_GeoLife_1M.pbbs neighbors:10 clusters:2 data type:vec
+clusters=2 knng_algo=0 knng_endc:0.010000 start_nndes:0.100000 data_type=1
+time[start]=0.000000s
+Reading ascii dataset file ../ParCluster/dataset/reallife/3D_GeoLife_1M.pbbs
+lines=1000000
+ 39.952148 116.409752 136.000000
+num_vectors=1000000 D=3
+Fast random pair divisive (RP-Div) construction of kNN graph v. 0.1
+K=10 W=25 delta=0.010000 maxIterations=100 nndes_start=0.100000 data type 1, distance type:0
+iter=0 time: time=1.216453s
+RP-div update_count=13563478 changes=135.634781%
+iter=1 time: time=2.191705s
+RP-div update_count=3533798 changes=35.337978%
+iter=2 time: time=3.043682s
+RP-div update_count=1192826 changes=11.928261%
+iter=3 time: time=3.844193s
+RP-div update_count=543248 changes=5.432480%
+start nndes: time=4.633709s
+  Build old_knn, new_knn : time=4.662107s
+  START Local join: time=5.926240s
+  END Local join: time=11.588935s
+NNDES k=10 update_count_nndes=535654 changes=5.356540%
+iter=4 time: time=11.812900s
+RP-div update_count=53899 changes=0.538990%
+start nndes: time=12.559389s
+  Build old_knn, new_knn : time=12.572294s
+  START Local join: time=14.283096s
+  END Local join: time=15.387861s
+NNDES k=10 update_count_nndes=70333 changes=0.703330%
+iter=5 time: time=15.678908s
+RP-div update_count=19838 changes=0.198380%
+start nndes: time=16.408880s
+  Build old_knn, new_knn : time=16.417707s
+  START Local join: time=18.069277s
+  END Local join: time=18.596432s
+NNDES k=10 update_count_nndes=25195 changes=0.251950%
+Reached end condition: changes=0.450330% < 1.000000%, time=18.832697s
+time=18.832699s
+time[graph]=18.832699s

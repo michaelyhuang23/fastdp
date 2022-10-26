@@ -1,0 +1,71 @@
+Fast Density Peaks clustering with kNN graph
+infn:../ParCluster/dataset/reallife/3D_GeoLife_100K.pbbs neighbors:10 clusters:2 data type:vec
+clusters=2 knng_algo=0 knng_endc:0.010000 start_nndes:0.100000 data_type=1
+time[start]=0.000000s
+Reading ascii dataset file ../ParCluster/dataset/reallife/3D_GeoLife_100K.pbbs
+lines=100000
+ 39.857147 116.425941 110.000000
+num_vectors=100000 D=3
+Fast random pair divisive (RP-Div) construction of kNN graph v. 0.1
+K=10 W=25 delta=0.010000 maxIterations=100 nndes_start=0.100000 data type 1, distance type:0
+iter=0 time: time=0.076484s
+RP-div update_count=1367243 changes=136.724304%
+iter=1 time: time=0.149132s
+RP-div update_count=363397 changes=36.339699%
+iter=2 time: time=0.209362s
+RP-div update_count=133582 changes=13.358200%
+iter=3 time: time=0.264782s
+RP-div update_count=55736 changes=5.573600%
+start nndes: time=0.319115s
+  Build old_knn, new_knn : time=0.323184s
+  START Local join: time=0.372175s
+  END Local join: time=0.847407s
+NNDES k=10 update_count_nndes=66726 changes=6.672600%
+iter=4 time: time=0.860484s
+RP-div update_count=4563 changes=0.456300%
+start nndes: time=0.915298s
+  Build old_knn, new_knn : time=0.918207s
+  START Local join: time=0.985149s
+  END Local join: time=1.082566s
+NNDES k=10 update_count_nndes=7731 changes=0.773100%
+iter=5 time: time=1.096778s
+RP-div update_count=1236 changes=0.123600%
+start nndes: time=1.150796s
+  Build old_knn, new_knn : time=1.151675s
+  START Local join: time=1.210438s
+  END Local join: time=1.256819s
+NNDES k=10 update_count_nndes=1908 changes=0.190800%
+Reached end condition: changes=0.314400% < 1.000000%, time=1.266235s
+time=1.266235s
+time[graph]=1.266236s
+i:0 density:0.042929
+i:1 density:0.015044
+i:2 density:244.519682
+i:3 density:4.001283
+i:4 density:0.000298
+i:5 density:1.198551
+i:6 density:0.493398
+i:7 density:0.006486
+i:8 density:0.015989
+i:9 density:0.967437
+i:0 density:23.294495
+i:1 density:66.472227
+i:2 density:0.004090
+i:3 density:0.249920
+i:4 density:3358.097243
+i:5 density:0.834341
+i:6 density:2.026762
+i:7 density:154.186508
+i:8 density:62.541652
+i:9 density:1.033659
+time[density]=1.351391s
+Found deltas for 96032/100000 points among 10 neighbors
+delta_in_knn=96032 delta_in_rev_knn=0 found_delta_total=96032 delta_not_found=3968
+time[delta_knn]=1.354526s
+time[delta_bf]=4.622767s
+time[deltadens]=4.622774s
+time=4.622958s
+First 2 peaks:89571 45984 
+time[total]=4.643478s
+total_time=4.643481s neighborhood_peaks=3968 num_iter=100
+END

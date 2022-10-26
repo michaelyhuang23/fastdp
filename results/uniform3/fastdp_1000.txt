@@ -1,0 +1,65 @@
+Fast Density Peaks clustering with kNN graph
+infn:../ParCluster/dataset/uniform/1000.txt neighbors:10 clusters:2 data type:vec
+clusters=2 knng_algo=0 knng_endc:0.010000 start_nndes:0.100000 data_type=1
+time[start]=0.000000s
+Reading ascii dataset file ../ParCluster/dataset/uniform/1000.txt
+lines=1000
+ -1.170014 29.669868
+num_vectors=1000 D=2
+Fast random pair divisive (RP-Div) construction of kNN graph v. 0.1
+K=10 W=25 delta=0.010000 maxIterations=100 nndes_start=0.100000 data type 1, distance type:0
+iter=0 time: time=0.000499s
+RP-div update_count=14334 changes=143.339996%
+iter=1 time: time=0.000962s
+RP-div update_count=3592 changes=35.919998%
+iter=2 time: time=0.001309s
+RP-div update_count=1110 changes=11.100000%
+iter=3 time: time=0.001605s
+RP-div update_count=441 changes=4.410000%
+start nndes: time=0.001891s
+  Build old_knn, new_knn : time=0.001942s
+  START Local join: time=0.002246s
+  END Local join: time=0.005127s
+NNDES k=10 update_count_nndes=369 changes=3.690000%
+iter=4 time: time=0.005161s
+RP-div update_count=6 changes=0.060000%
+start nndes: time=0.005439s
+  Build old_knn, new_knn : time=0.005443s
+  START Local join: time=0.005689s
+  END Local join: time=0.006141s
+NNDES k=10 update_count_nndes=8 changes=0.080000%
+Reached end condition: changes=0.140000% < 1.000000%, time=0.006184s
+time=0.006184s
+time[graph]=0.006185s
+i:0 density:1.870391
+i:1 density:3.982616
+i:2 density:2.497705
+i:3 density:2.084905
+i:4 density:2.429024
+i:5 density:2.668918
+i:6 density:3.118695
+i:7 density:2.380840
+i:8 density:1.695363
+i:9 density:2.557492
+i:0 density:0.534648
+i:1 density:0.251091
+i:2 density:0.400368
+i:3 density:0.479638
+i:4 density:0.411688
+i:5 density:0.374684
+i:6 density:0.320647
+i:7 density:0.420020
+i:8 density:0.589844
+i:9 density:0.391008
+time[density]=0.006573s
+Found deltas for 953/1000 points among 10 neighbors
+delta_in_knn=953 delta_in_rev_knn=0 found_delta_total=953 delta_not_found=47
+time[delta_knn]=0.006587s
+time[delta_bf]=0.006905s
+time[deltadens]=0.006905s
+time=0.006918s
+First 2 peaks:244 76 
+time[total]=0.007068s
+total_time=0.007069s neighborhood_peaks=47 num_iter=100
+NPEAKS_LIST[47]: 0 8 76 93 101 114 165 171 186 208 215 220 229 232 244 245 255 314 347 351 359 373 393 394 420 421 475 501 513 524 540 562 565 599 621 643 651 720 743 753 768 778 808 848 897 933 938 
+END
